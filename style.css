@@ -54,48 +54,47 @@ nav a:hover {
 /* Hero 영역 */
 
 .hero {
-  position: relative;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+    /* 배경 이미지 + 어두운 오버레이 */
+    background-image:
+        linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("공기.png");
+
+    background-size: cover;        /* 화면 꽉 채우기 */
+    background-position: center;   /* 중심 정렬 */
+    background-repeat: no-repeat;
 }
 
-.hero.hero-1 {
-  background-image: url("img/hero-warehouse.jpg"); /* 컨테이너 창고 사진 */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 18px;
 }
 
-.hero.hero-2 {
-  background-image: url("img/hero-paper.jpg"); /* 서류/통관 사진 */
+.hero p {
+    font-size: 1.2rem;
 }
 
-.hero.hero-3 {
-  background-image: url("img/hero-studio.jpg"); /* 스튜디오/왕홍 사진 */
-}
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+        background-position: center top;
+    }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, #00000055, #000000aa);
-}
+    .hero h1 {
+        font-size: 2rem;
+    }
 
-.hero-content {
-  position: relative;
-  max-width: 900px;
-  padding: 0 20px;
-}
-
-.hero-title {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.hero-subtitle {
-  font-size: 18px;
+    .hero p {
+        font-size: 1rem;
+    }
 }
 
 /* 공통 섹션 */
@@ -296,3 +295,4 @@ footer {
     font-size: 15px;
   }
 }
+
