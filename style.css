@@ -54,6 +54,8 @@ nav a:hover {
 /* Hero 영역 */
 
 .hero {
+  border: 10px solid red;
+}
     height: 90vh;
     display: flex;
     align-items: center;
@@ -295,6 +297,7 @@ footer {
     font-size: 15px;
   }
 }
+
 
 
 
