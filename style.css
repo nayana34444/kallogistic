@@ -64,7 +64,7 @@ nav a:hover {
     /* 배경 이미지 + 어두운 오버레이 */
     background-image:
         linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url("공기.png");
+        url("air.png");
 
     background-size: cover;        /* 화면 꽉 채우기 */
     background-position: center;   /* 중심 정렬 */
@@ -295,4 +295,5 @@ footer {
     font-size: 15px;
   }
 }
+
 
